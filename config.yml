@@ -1,0 +1,23 @@
+login:
+  username: ''
+  password: ''
+urls:
+  userLogin: 'https://auth.tesla.com/login'
+  userLogout: 'https://www.tesla.com/user/logout'
+tesla:
+  reservation: ''
+puppet:
+  headless: false
+  args:
+    - '--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36'
+    - '--no-sandbox'
+    - '--disable-setuid-sandbox'
+    - '--disable-gpu'
+    - '--disable-dev-shm-usage'
+twillio:
+  accountSid: ''
+  authToken: ''
+  phoneFrom: ''
+  phoneTo: ''
+interval:
+  minutes: 300

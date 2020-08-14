@@ -1,0 +1,32 @@
+{
+  "name": "tesla-vin-notify",
+  "version": "1.0.0",
+  "description": "notify when reservation has VIN",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-dev --no-deps --respawn index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scramble45/tesla-VIN-notify.git"
+  },
+  "keywords": [
+    "tesla"
+  ],
+  "author": "Rowan Hamilton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scramble45/tesla-VIN-notify/issues"
+  },
+  "homepage": "https://github.com/scramble45/tesla-VIN-notify#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "js-yaml": "^3.14.0",
+    "puppeteer": "^5.2.1",
+    "twilio": "^3.48.2"
+  },
+  "devDependencies": {
+    "node-dev": "^5.1.0"
+  }
+}
