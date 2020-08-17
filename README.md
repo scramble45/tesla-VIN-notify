@@ -2,12 +2,12 @@
 Notifies when a VIN has been assigned on your tesla reservation
 
 ## Getting started:
-Edit the `config.yml` file. Add your creds and reservation number. This includes twillio creds. If you dont have twillio you can sign up and use their free credits to SMS you when the vin is found. You can configure the interval of when it tries to go out in find your vin in our Tesla account but editing the config.
+Edit the `config.yml` file. Add your creds and reservation number. This includes twillio creds. If you dont have [Twillio](https://www.twilio.com/) you can sign up and use their free credits to SMS you when the VIN is found. You can configure the interval of when it tries to go out in find your vin in our Tesla account by editing the config.
 
 - I would recommend making a systemd job to run this or something like that.
 
 
-Example systemd:
+## Example systemd:
 `/etc/systemd/system/tesla.service`
 ```
 [Unit]
@@ -28,3 +28,7 @@ User=root
 [Install]
 WantedBy=multi-user.target
 ```
+
+`sudo sytemctl enable tesla`
+
+`sudo journalctl -u tesla.service -f`
