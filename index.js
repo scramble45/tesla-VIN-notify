@@ -72,14 +72,14 @@ async function notifier(config) {
 
   if (vin) {
     twillio.messages
-      .create({
-        body: `Hey congrats! You got a VIN: ${Vin} one step closer to delivery`,
-        from: config.twillio.phoneFrom,
-        to: config.twillio.phoneTo
-      })
-      .then(message =>
-        debug(message.sid)
-      )
+    .create({
+      body: `Hey congrats! You got a VIN: ${Vin} on step closer to delivery`,
+      from: config.twillio.phoneFrom,
+      to: config.twillio.phoneTo
+    })
+    .then(message =>
+      debug(message.sid)
+    )
   }
 }
 
