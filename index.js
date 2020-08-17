@@ -64,6 +64,7 @@ async function notifier(config) {
   await page.goto(config.urls.userLogout)
   await page.close()
   await browser.close()
+  debug('Closed browser window...')
 
   debug({
     estimateDeliveryDate,
