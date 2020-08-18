@@ -14,10 +14,13 @@ puppet:
     - '--disable-setuid-sandbox'
     - '--disable-gpu'
     - '--disable-dev-shm-usage'
-twillio:
+twilio:
   accountSid: ''
   authToken: ''
   phoneFrom: ''
   phoneTo: ''
+discord:
+  id: ''
+  token: ''
 interval:
   minutes: 300
